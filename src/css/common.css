@@ -1,104 +1,139 @@
-@charset "UTF-8";
-.fixed {
+@charset 'UTF-8';
+.fixed
+{
     position: fixed !important;
 }
 
-.cm-fl {
+.cm-fl
+{
     float: left;
 }
 
-.cm-fr {
+.cm-fr
+{
     float: right;
 }
 
-.main-container {
+.main-container
+{
     position: relative;
-    padding: 0;
-    margin: 0;
+
     width: 100%;
     min-width: 1280px;
+    margin: 0;
+    padding: 0;
 }
 
-.content {
+.content
+{
     position: relative;
-    width: 100%;
+
     overflow: hidden;
+
+    width: 100%;
+
     background-color: #b9b9b9;
 }
 
-.cm-header {
+.cm-header
+{
     position: relative;
+
+    box-sizing: border-box;
     width: 100%;
     height: 122px;
-    background-color: #323232;
+
     border-bottom: 2px solid #c91277;
-    box-sizing: border-box;
+    background-color: #323232;
 }
 
-.cm-header .header-con {
+.cm-header .header-con
+{
     position: relative;
+
+    box-sizing: border-box;
     width: 1167px;
     height: 100%;
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.header-con .logo {
+.header-con .logo
+{
     position: absolute;
-    left: 10px;
     top: 15px;
+    left: 10px;
+
     width: 235px;
     height: 85px;
 }
 
-.header-con .shortcut {
+.header-con .shortcut
+{
     position: absolute;
-    right: 10px;
     top: 15px;
+    right: 10px;
 }
 
-.header-con .shortcut a {
-    color: #787878;
+.header-con .shortcut a
+{
     font-size: 12px;
-    padding: 0 6px;
+
     margin: 6px 0;
+    padding: 0 6px;
+
+    color: #787878;
 }
 
-.header-con .shortcut a:last-child {
+.header-con .shortcut a:last-child
+{
     border-right: 1px solid #636363;
 }
 
-.header-con .shortcut a:hover {
+.header-con .shortcut a:hover
+{
     color: #c91277;
 }
 
-.search-bar {
-    width: 125px;
-    height: 25px;
-    border-radius: 2px;
+.search-bar
+{
     line-height: 25px;
+
     position: relative;
+
     display: inline-block;
     overflow: hidden;
+
+    width: 125px;
+    height: 25px;
+
     transition: width .3s;
     vertical-align: middle;
+
+    border-radius: 2px;
+
     -webkit-backface-visibility: hidden;
 }
 
-.search-bar .input {
+.search-bar .input
+{
     font-size: 14px;
     line-height: 25px;
+
     position: absolute;
     z-index: 0;
     top: 0;
     right: 0;
+
     display: block;
+
     box-sizing: border-box;
     width: 100%;
     height: 25px;
     padding: 0 25px 0 10px;
+
     text-align: right;
+
     color: #323232;
     border: 1px solid #7f7f7f;
     border-radius: 4px;
@@ -106,161 +141,218 @@
 }
 
 .search-bar .search-btn,
-.search-bar .search-ico {
+.search-bar .search-ico
+{
     line-height: 25px;
+
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
+
     display: block;
+
     width: 25px;
     height: 25px;
     margin: 0;
     padding: 0;
+
     cursor: pointer;
     text-align: center;
+
     border: 0;
     background-color: transparent;
 }
 
-.search-bar .search-ico {
+.search-bar .search-ico
+{
     font-size: 14px;
+
     z-index: 3;
+
     color: #323232;
 }
 
-.header-con nav {
+.header-con nav
+{
     position: absolute;
     right: 10px;
     bottom: -2px;
+
     width: 820px;
 }
 
-.header-con nav a {
+.header-con nav a
+{
+    font-family: SimHei, Microsoft YaHei;
+    font-size: 18px;
+    line-height: 65px;
+
     float: left;
-    margin: 0;
-    padding: 0 10px;
+
     width: 130px;
     height: 65px;
-    line-height: 65px;
+    margin: 0;
+    padding: 0 10px;
+
     text-align: center;
-    font-size: 18px;
+
     color: #fff;
-    font-family: SimHei, Microsoft YaHei;
 }
 
-.header-con nav a:hover {
+.header-con nav a:hover
+{
     color: #c91277;
 }
 
-.header-con nav a.active {
+.header-con nav a.active
+{
     color: #c91277;
     border-bottom: 3px solid #969696;
-
 }
 
-.footer {
+.footer
+{
     position: relative;
+
     width: 100%;
+
     border-top: 1px solid #000;
     background-color: #808080;
 }
 
-.footer.fixed {
-    left: 0;
+.footer.fixed
+{
     bottom: 0;
+    left: 0;
 }
 
-.footer .ft-service {
+.footer .ft-service
+{
     position: relative;
-    margin: 0 auto;
-    padding: 30px 0;
+
+    box-sizing: border-box;
     width: 1167px;
     height: 205px;
-    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
 .ft-service .ft_nav,
-.ft-service .contact {
+.ft-service .contact
+{
     position: relative;
+
     float: left;
+
     width: 50%;
 }
 
-.ft-service .ft_nav dl {
-    float: left;
-    width: 33%;
-    text-align: center;
+.ft-service .ft_nav dl
+{
     font-size: 12px;
-    color: #fff;
     line-height: 25px;
+
+    float: left;
+
+    width: 33%;
+
+    text-align: center;
+
+    color: #fff;
 }
 
-.ft_nav dl dt {
+.ft_nav dl dt
+{
     font-weight: bold;
 }
 
-.ft_nav dl dd a {
+.ft_nav dl dd a
+{
     color: #fff;
 }
 
-.ft_nav dl dd a:hover {
+.ft_nav dl dd a:hover
+{
     color: #c91277;
 }
 
 .ft-service .qrcode,
-.ft-service .contact-us {
+.ft-service .contact-us
+{
     float: left;
-    padding-top: 6px;
+
     width: 50%;
+    padding-top: 6px;
+
     text-align: center;
 }
 
-.ft-service .qrcode p {
+.ft-service .qrcode p
+{
     font-size: 12px;
-    color: #fff;
     line-height: 25px;
-}
 
-.ft-service .contact-us a {
-    display: block;
-    line-height: 40px;
-    font-size: 12px;
     color: #fff;
 }
 
-.ft-service .contact-us a:hover {
+.ft-service .contact-us a
+{
+    font-size: 12px;
+    line-height: 40px;
+
+    display: block;
+
+    color: #fff;
+}
+
+.ft-service .contact-us a:hover
+{
     color: #c91277;
 }
 
-.ft-service .contact-us .phone {
+.ft-service .contact-us .phone
+{
     font-size: 30px;
+
     margin: 15px 0;
 }
 
-.ft-service .contact-us a i {
+.ft-service .contact-us a i
+{
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 30px;
+
     width: 34px;
     height: 34px;
-    background: url("../img/contact-us-icon.png") no-repeat -4px -49px;
+    margin-right: 30px;
+
+    vertical-align: middle;
+
+    background: url('../img/contact-us-icon.png') no-repeat -4px -49px;
 }
 
-.ft-service .contact-us a .dv {
+.ft-service .contact-us a .dv
+{
     background-position: -4px -4px;
 }
 
-.copy-right {
+.copy-right
+{
+    line-height: 40px;
+
     position: relative;
+
     width: 100%;
     height: 40px;
-    line-height: 40px;
+
     text-align: center;
+
     background-color: #323232;
 }
 
-.copy-right a {
-    color: #8f8f8f;
+.copy-right a
+{
     font-size: 12px;
+
+    color: #8f8f8f;
 }
