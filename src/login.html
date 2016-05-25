@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登陆页</title>
+    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" href="assets/css/icheck/pink.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/access.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="content">
+        <div class="home">
+            <div class="entry-login">
+                <div class="login-box">
+                    <div class="logo">
+                        <img src="img/logo01.png">
+                    </div>
+                    <div class="form-control">
+                        <form method="post">
+                            <input class="input-control" type="text" id="userName" placeholder="请输入邮箱/用户名/手机号码"
+                                   required="required"></br>
+                            <input class="input-control" type="password" id="pwd" placeholder="请输入登录密码"
+                                   required="required">
+                            <label class="cm-fl"><input type="checkbox" id="autoLogin">七天自动登录</label>
+                            <a href="findpassword.html" class="cm-fr">忘记密码</a>
+                            <button type="submit" class="button">登录</button>
+                            <div class="go-reg">
+                                <a class="btn cm-fl" href="register.html">注册</a>
+                                <a class="btn cm-fr" href="javascript:;">合作平台账号登陆</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer fixed">
+        <p class="copy-right"><a href="javascript:;" target="_blank">Copyrignt © 2004-2015 海菲乐创意 版权所有
+            京ICP备11017824号-7</a></p>
+    </div>
+</div>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('input[type="radio"],input[type="checkbox"]').iCheck({
+            checkboxClass: 'icheckbox_minimal-pink',
+            radioClass: 'iradio_minimal-pink',
+            increaseArea: '20%'
+        })
+    })
+</script>
+</body>
+</html>
